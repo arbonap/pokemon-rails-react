@@ -6,4 +6,12 @@ class CampaignsController < ApplicationController
   end
   @campaigns
   end
+
+  def api_search
+    @campaigns = Campaign.all
+   if params[:search]
+     @campaigns = Campaign.where('title LIKE ? OR tagline LIKE ?', "%#{params[:search]}%", "%#{params[:search]}%" )
+   end
+   render json: @campaigns
+  end
 end

@@ -127,8 +127,6 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    spring (2.0.1)
-      activesupport (>= 4.2)
     sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -164,10 +162,9 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.6)
-  react-rails
+  react-rails (~> 1.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
-  spring
   sqlite3
   table_flipper
   turbolinks
