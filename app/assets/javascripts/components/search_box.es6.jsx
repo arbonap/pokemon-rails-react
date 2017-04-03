@@ -17,7 +17,7 @@ class SearchApp extends React.Component {
     e.preventDefault()
     var toShowValueIsChanging = this.state.searchString;
     $.get("/api/search?search="+ this.state.searchString, function(response){
-      this.setState({campaigns: [response]})
+      this.setState({campaigns: response})
     }.bind(this))
 }
   render () {
