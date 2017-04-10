@@ -14,7 +14,7 @@ class CampaignsController < ApplicationController
    if params[:search]
      @campaigns = Campaign.where('title LIKE ? OR tagline LIKE ?', "%#{params[:search]}%", "%#{params[:search]}%" )
    end
-   if stale?(@campaigns) #does this stale? method actually work?
+   if stale?(@campaigns)
      render json: @campaigns
    end
   end

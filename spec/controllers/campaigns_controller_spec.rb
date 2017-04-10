@@ -11,7 +11,12 @@ RSpec.describe CampaignsController, type: :controller do
       get :index
       response.should render_template :index
     end
+    it "assigns @campaigns" do
+      get :index
+      expect(assigns(:campaigns)).to_not be_nil
+    end
   end
+
 
   describe "GET /api_search" do
     it "returns http success for an AJAX request" do
