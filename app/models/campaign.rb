@@ -2,8 +2,8 @@ class Campaign < ActiveRecord::Base
   validates_presence_of :title, :small_image_url, :large_image_url, :tagline, :web_url
   validates_uniqueness_of :title, :web_url
 
-  def self.search
-    uri = URI.parse("https://api.indiegogo.com/1/campaigns.json?api_token=e377270bf1e9121da34cb6dff0e8af52a03296766a8e955c19f62f593651b346")
+  def self.search(endpoint=INDIEGOGO_ENDPOINT)
+    uri = URI.parse(endpoint)
     response = Net::HTTP.get_response(uri)
     data = JSON.parse(response.body)
 
