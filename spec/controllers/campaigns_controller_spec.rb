@@ -13,6 +13,7 @@ RSpec.describe CampaignsController, type: :controller do
     end
     it "assigns @campaigns" do
       get :index
+
       expect(assigns(:campaigns)).to_not be_nil
     end
   end

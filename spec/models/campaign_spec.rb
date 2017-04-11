@@ -51,6 +51,10 @@ RSpec.describe Campaign, type: :model do
       expect(response).to be_an_instance_of(Hash)
       expect(response).to eq response
     end
+    
+    context "responds to its methods" do
+      it { expect(valid_campaign).to respond_to(:search) }
+    end
   end
 end
 end
