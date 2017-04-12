@@ -17,5 +17,6 @@ class CampaignsController < ApplicationController
    if stale?(@campaigns)
      render json: @campaigns
    end
+   @campaigns
   end
 end

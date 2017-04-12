@@ -3,7 +3,7 @@ class SearchApp extends React.Component {
     super(props)
     this.state = {
       searchString: "",
-      campaigns: ['CHOCOLATE']
+      campaigns: ['response']
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
