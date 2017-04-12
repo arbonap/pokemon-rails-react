@@ -1,11 +1,32 @@
 // Place all the styles related to the Campaigns controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html, body{
+  background: linear-gradient(white, #AEEEEE );
+}
+
+.bold {
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 3.5em;
+}
 .center {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-family: 'Varela', sans-serif;
+}
+.image-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 10px grey;
+}
+.image-ctr:hover {
+  cursor: crosshair;
+  opacity: 0.5;
+}
+.varela {
+font-family: 'Varela', sans-serif;
 }
 
 .left {
@@ -15,7 +36,25 @@
 }
 
 
-// .border {
-//   border: 5px solid #000000;
-//   border-radius: 10px;
-// }
+
+.border {
+  border: 3px solid #008080;
+  border-radius: 20px;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
