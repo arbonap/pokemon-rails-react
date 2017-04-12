@@ -1,6 +1,6 @@
 ## Indiegogo Campaign Search
 #### _Search through Indiegogo campaigns fundraising for unique causes_
-![Indiegogo Campaign Search](http://g.recordit.co/39Dpi2Mlwi.gif)
+![Indiegogo Campaign Search](./indiegogo-searc.gif)
 
 ## Don't feel like setting this up locally on your machine?
 #### No worries, click [here](https://obscure-waters-39090.herokuapp.com/) to search through Indiegogo Campaigns
