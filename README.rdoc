@@ -1,28 +1,27 @@
-== README
+## Indiegogo Campaign Search
+#### _Search through Indiegogo campaigns fundraising for unique causes_
+![Indiegogo Campaign Search](http://g.recordit.co/39Dpi2Mlwi.gif)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Don't feel like setting this up locally on your machine?
+#### No worries, click [here](https://obscure-waters-39090.herokuapp.com/) to search through Indiegogo Campaigns
+## To set this project up locally:
+- Before we begin, this project uses `Ruby 2.3`, `Rails 4`, and `postgres`.
+Make sure you have these configured on your machine. Make sure `postgres` is running.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  - ** Remember: If you downloaded `postgres` via the separate OSX app, make sure the
+elephant is in your taskbar. **
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+-  In the terminal, `git clone git@github.com:arbonap/campaigns.git`
+- `bundle install` all the gems.
+- `rake db:create` to create your database in Postgres.
+- `rake db:migrate` to run database migrations.
+- `rake db:seed` to seed your local database.
+  - ** Note: you _must_ seed your database, if not you will not see any data in your app **
+- Run `rails s` to start the server
+- Go to `localhost:3000` in the browser to see the magic ✨
+
+## To run tests:
+- In the root of project folder, run `rspec spec` to run all of the `rspec` tests
+
+## Voilá! 🍒
