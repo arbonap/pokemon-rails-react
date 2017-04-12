@@ -39,7 +39,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'webmock'
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 group :development do
