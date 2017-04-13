@@ -52,7 +52,7 @@ echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/pat
     - Close your terminal window, and re-open a new one for the changes to take effect
     - Postgres should be running on `port 5432`
     - You should see this:
-    
+
     ![Postgres startup](./postgres.png)
 
   - ** Remember: Assuming you downloaded `Postgres` via the  OSX app, make sure the
@@ -96,8 +96,8 @@ elephant is in your menubar. If do not see the Postgres elephant running in your
 - I utilized React to replace my Rails views. I primarily did this because, in my experience, it feels like standard Rails views (such as `.erb` and `.haml` files) are falling out of fashion.
   - Some pros of React include:
     - reusability of components.
-    - React will handle all UI updates automatically when data changes.
-    - Ease of debugging. there's a reactJS chrome extension that allows you to inspect the DOM to figure out which component is rendering a particular piece of UI.
+    - React handles UI updates automatically when data changes.
+
 
 
 ## Voilá! 🍒
