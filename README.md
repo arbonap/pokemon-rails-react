@@ -16,10 +16,10 @@ Assuming you're on MacOSX and have an OS later than Snow Leopard:
 - Install a complier (like XCode) [here](http://installfest.railsbridge.org/installfest/install_xcode). (If you already have downloaded XCode, skip this step.)
 - Configure Git
   - This `readme.md` assumes you already have Git configured on your machine.
-  If you do **not** have `git` set-up on your machine, _stop_ and follow [these directions](http://installfest.railsbridge.org/installfest/configure_git) to configure `git`. )
+  If you do **not** have `git` set-up on your machine, _stop_ and follow [these directions](http://installfest.railsbridge.org/installfest/configure_git) to configure `git`.
 - Install Homebrew
   - Homebrew is an open-source software package management system for MacOSX. (If you already have Homebrew on your system, skip this step.)
-    - Type this in your terminal:
+  - Type this in your terminal:
 
      ``` ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ```
 - Install RVM, or Ruby Version Manager.
@@ -78,7 +78,9 @@ elephant is in your taskbar. If do not see the Postgres elephant running in your
 
 - In Development: `bundle exec rails console`
 
-
+## Why did I choose to complete this exercise using Ruby on Rails, and React?
+- I used Rails for the backend because as a framework, it provides a standard MVC structure that keeps my app logic organized. There is tradition in how a Rails app folder hierarchy is structured, which gives developers new to a project some guidance. Furthermore, there are many popular, well-maintained 3rd party gems. Also, there is a large emphasis on testing and test automation in the Ruby community; this helps produce high-quality, dependable code. I feel like Ruby can be a very succinct language, and has many useful methods such as `.flatten` that other languages may not include into their standard library. Lastly, I used Rails because I know that Indiegogo is a Rails shop.
+- I utilized React to replace my Rails views. I did this because, in my experience, it feels like standard Rails views (such as `.erb` and `.haml` files) are falling out of fashion. 
 
 
 ## Voilá! 🍒
