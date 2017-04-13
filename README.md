@@ -52,6 +52,7 @@ echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/pat
     - Close your terminal window, and re-open a new one for the changes to take effect
     - Postgres should be running on `port 5432`
     - You should see this:
+    
     ![Postgres startup](./postgres.png)
 
   - ** Remember: Assuming you downloaded `Postgres` via the  OSX app, make sure the
