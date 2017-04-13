@@ -79,8 +79,16 @@ elephant is in your taskbar. If do not see the Postgres elephant running in your
 - In Development: `bundle exec rails console`
 
 ## Why did I choose to complete this exercise using Ruby on Rails, and React?
-- I used Rails for the backend because as a framework, it provides a standard MVC structure that keeps my app logic organized. There is tradition in how a Rails app folder hierarchy is structured, which gives developers new to a project some guidance. Furthermore, there are many popular, well-maintained 3rd party gems. Also, there is a large emphasis on testing and test automation in the Ruby community; this helps produce high-quality, dependable code. I feel like Ruby can be a very succinct language, and has many useful methods such as `.flatten` that other languages may not include into their standard library. Lastly, I used Rails because I know that Indiegogo is a Rails shop.
-- I utilized React to replace my Rails views. I did this because, in my experience, it feels like standard Rails views (such as `.erb` and `.haml` files) are falling out of fashion. 
+- I used Rails for the backend because as a framework, it provides a standard MVC structure that keeps my app logic organized. There is tradition in how a Rails app folder hierarchy is structured, which gives developers new to a project some guidance.
+  - Furthermore, there are many popular, well-maintained 3rd party gems.
+  - Also, there is a large emphasis on testing and test automation in the Ruby community; this helps produce high-quality, dependable code.
+  - I feel like Ruby can be a very succinct language, and has many useful methods such as `.flatten` that other languages may not include into their standard library.
+  - Lastly, I used Rails because I know that Indiegogo is a Rails shop.
+- I utilized React to replace my Rails views. I primarily did this because, in my experience, it feels like standard Rails views (such as `.erb` and `.haml` files) are falling out of fashion.
+  - Some pros of React include: 
+    - reusability of components.
+    - React will handle all UI updates automatically when data changes.
+    - Ease of debugging. there's a reactJS chrome extension that allows you to inspect the DOM to figure out which component is rendering a particular piece of UI.
 
 
 ## Voilá! 🍒
