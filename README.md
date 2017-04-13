@@ -37,7 +37,7 @@ Assuming you're on MacOSX and have an OS later than Snow Leopard:
   - Type `rvm install 2.3` in the terminal. This takes a while...
   - Type ` rvm use 2.3 `
   - Then type `rvm --default use 2.3 `
-  - To verify, type `ruby -v` in the command-line and you should get something like `ruby 2.3.x`.
+  - To verify, type `ruby -v` in the command-line and you should get something like `ruby 2.3.x` as a result.
 
 - Install Rails
   - This particular project uses Rails 4.2.6. Type `gem install rails 4.2.6` into the terminal.
@@ -51,32 +51,40 @@ Assuming you're on MacOSX and have an OS later than Snow Leopard:
 echo /Applications/Postgres.app/Contents/Versions/latest/bin | sudo tee /etc/paths.d/postgresapp`
     - Close your terminal window, and re-open a new one for the changes to take effect
     - Postgres should be running on `port 5432`
+    - You should see this:
+    ![Postgres startup](./postgres.png)
 
   - ** Remember: Assuming you downloaded `Postgres` via the  OSX app, make sure the
-elephant is in your taskbar. If do not see the Postgres elephant running in your taskbar, then _Postgres isn't running_.**
+elephant is in your menubar. If do not see the Postgres elephant running in your menubar, then _Postgres isn't running_.**
 
 
 
 ## After initial set-up is done...
 -  In the terminal, `git clone git@github.com:arbonap/campaigns.git`
+- `cd` into the root folder of the Campaigns app
 - `bundle install` all the gems.
+![bundle](./bundle.png)
 - `rake db:create` to create your database in Postgres.
 - `rake db:migrate` to run database migrations.
+![migration](./migration.png)
 - `rake db:test:prepare`
 - `rake db:seed` to seed your local database.
   - ** Note: you _must_ seed your database, if not you will not see any data in your app **
 - Run `rails s` to start the server
+![server](./server.png)
 - Go to `localhost:3000` in the browser to see the magic ✨
 
 ## To run tests:
 - In the root of project folder, run `rspec spec` to run all of the `rspec` tests
+![rspec tests](./rspec.png)
   - From the root directory of the project, `cd spec/controllers` to view the controller specs
   - From the root directory of the project, `cd spec/models` to view the model specs
 - Run `rake db:test:prepare` after you pull or make any changes to the app, in general.
 
 ## Rails console
 
-- In Development: `bundle exec rails console`
+- In Development: `bundle exec rails console` (or `rails c` for short, like featured in the screenshot)
+![Rails-console](./rails-console.png)
 
 ## Why did I choose to complete this exercise using Ruby on Rails, and React?
 - I used Rails for the backend because as a framework, it provides a standard MVC structure that keeps my app logic organized. There is tradition in how a Rails app folder hierarchy is structured, which gives developers new to a project some guidance.
@@ -85,7 +93,7 @@ elephant is in your taskbar. If do not see the Postgres elephant running in your
   - I feel like Ruby can be a very succinct language, and has many useful methods such as `.flatten` that other languages may not include into their standard library.
   - Lastly, I used Rails because I know that Indiegogo is a Rails shop.
 - I utilized React to replace my Rails views. I primarily did this because, in my experience, it feels like standard Rails views (such as `.erb` and `.haml` files) are falling out of fashion.
-  - Some pros of React include: 
+  - Some pros of React include:
     - reusability of components.
     - React will handle all UI updates automatically when data changes.
     - Ease of debugging. there's a reactJS chrome extension that allows you to inspect the DOM to figure out which component is rendering a particular piece of UI.
