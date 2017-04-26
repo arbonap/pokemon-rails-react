@@ -5,4 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Campaign.search
+ActiveRecord::Base.connection.execute("TRUNCATE TABLE pokemons RESTART IDENTITY")
+
+(1..151).each do |n|
+  poke_data = HTTParty.get("http://pokeapi.co/api/v2/pokemon/#{n}")
+
+  Pokemon.create! do |p|
+    p.name = poke_data['name']
+    p.pk_type = poke_data['types'].map{|t| t['type']['name'] }
+    p.sprite = poke_data['sprites']['front_shiny']
+    p.order = poke_data['order']
+    p.height = poke_data['height']
+    p.weight = poke_data['weight']
+  end
+end

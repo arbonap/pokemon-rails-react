@@ -19,4 +19,5 @@ class CampaignsController < ApplicationController
    end
    @campaigns
   end
+
 end

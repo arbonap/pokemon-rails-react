@@ -20,4 +20,5 @@ class Campaign < ActiveRecord::Base
     campaigns.select(&:persisted?)
 
   end
+
 end
